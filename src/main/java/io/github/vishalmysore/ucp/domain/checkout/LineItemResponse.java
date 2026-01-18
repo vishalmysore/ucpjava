@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.checkout;
+﻿ckage io.github.vishalmysore.ucp.domain.checkout;
 import io.github.vishalmysore.ucp.domain.common.ItemResponse;
 import lombok.Data;
 import java.util.List;
@@ -11,4 +11,7 @@ public class LineItemResponse {
     private List<TotalResponse> totals;
     private String parentId; // For hierarchical items
 }
+
+
+
 

@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.common;
+﻿ckage io.github.vishalmysore.ucp.domain.common;
 import lombok.Data;
 
 @Data
@@ -11,4 +11,7 @@ public class Buyer {
     private PostalAddress shippingAddress;
     private PostalAddress billingAddress;
 }
+
+
+
 

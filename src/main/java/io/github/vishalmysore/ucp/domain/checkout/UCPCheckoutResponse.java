@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.checkout;
+﻿ckage io.github.vishalmysore.ucp.domain.checkout;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,4 +9,7 @@ import lombok.NoArgsConstructor;
 public class UCPCheckoutResponse {
     private String version; // YYYY-MM-DD format
 }
+
+
+
 

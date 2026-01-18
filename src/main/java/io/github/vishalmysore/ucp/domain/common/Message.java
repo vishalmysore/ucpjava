@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.common;
+﻿ckage io.github.vishalmysore.ucp.domain.common;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -18,4 +18,7 @@ public abstract class Message {
     private String contentType = "plain"; // plain or markdown
     private String content;
 }
+
+
+
 

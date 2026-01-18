@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.annotation;
+﻿ckage io.github.vishalmysore.ucp.annotation;
 
 import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
@@ -33,4 +33,7 @@ public @interface EnableUCP {
      */
     boolean embeddedEnabled() default false;
 }
+
+
+
 

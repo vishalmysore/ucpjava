@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.common;
+﻿ckage io.github.vishalmysore.ucp.domain.common;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,4 +11,7 @@ public class Link {
     private String href;
     private String title;
 }
+
+
+
 

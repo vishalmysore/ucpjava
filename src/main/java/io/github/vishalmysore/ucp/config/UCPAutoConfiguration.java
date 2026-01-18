@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.config;
+﻿ckage io.github.vishalmysore.ucp.config;
 
 import io.github.vishalmysore.ucp.annotation.*;
 import io.github.vishalmysore.ucp.handler.PaymentHandlerRegistry;
@@ -32,4 +32,7 @@ public class UCPAutoConfiguration {
         return new SchemaManager();
     }
 }
+
+
+
 

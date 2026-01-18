@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.common;
+﻿ckage io.github.vishalmysore.ucp.domain.common;
 import lombok.Data;
 
 @Data
@@ -9,4 +9,7 @@ public class ItemResponse {
     private String imageUrl;
     private String description;
 }
+
+
+
 

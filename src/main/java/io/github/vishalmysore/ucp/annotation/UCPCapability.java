@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.annotation;
+﻿ckage io.github.vishalmysore.ucp.annotation;
 
 import java.lang.annotation.*;
 
@@ -37,4 +37,7 @@ public @interface UCPCapability {
      */
     String extendsCapability() default "";
 }
+
+
+
 

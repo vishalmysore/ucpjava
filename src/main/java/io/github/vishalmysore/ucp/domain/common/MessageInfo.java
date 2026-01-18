@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.common;
+﻿ckage io.github.vishalmysore.ucp.domain.common;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -10,4 +10,7 @@ public class MessageInfo extends Message {
         setType("info");
     }
 }
+
+
+
 

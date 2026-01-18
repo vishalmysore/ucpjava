@@ -1,4 +1,4 @@
-﻿package io.github.vishalmysore.ucp.domain.checkout;
+﻿ckage io.github.vishalmysore.ucp.domain.checkout;
 
 public enum CheckoutStatus {
     incomplete,
@@ -8,4 +8,7 @@ public enum CheckoutStatus {
     completed,
     canceled
 }
+
+
+
 
