@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.domain.checkout;
+package io.github.vishalmysore.ucp.domain.checkout;
 import io.github.vishalmysore.ucp.domain.common.ItemResponse;
 import lombok.Data;
 import java.util.List;

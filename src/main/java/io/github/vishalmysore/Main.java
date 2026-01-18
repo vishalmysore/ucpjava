@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore;
+package io.github.vishalmysore;
 
 public class Main {
     public static void main(String[] args) {

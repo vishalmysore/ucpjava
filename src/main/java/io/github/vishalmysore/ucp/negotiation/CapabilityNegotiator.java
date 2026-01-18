@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.negotiation;
+package io.github.vishalmysore.ucp.negotiation;
 
 import io.github.vishalmysore.ucp.annotation.UCPCapability;
 import org.springframework.stereotype.Component;

@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+fix_ackage.ps1
+fix_packages.ps1
+remove_bom.ps1

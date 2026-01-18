@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.server.rest;
+package io.github.vishalmysore.ucp.server.rest;
 
 import io.github.vishalmysore.ucp.domain.checkout.*;
 import io.github.vishalmysore.ucp.domain.common.Message;

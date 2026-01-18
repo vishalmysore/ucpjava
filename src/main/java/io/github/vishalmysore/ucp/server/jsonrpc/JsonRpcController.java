@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.server.jsonrpc;
+package io.github.vishalmysore.ucp.server.jsonrpc;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

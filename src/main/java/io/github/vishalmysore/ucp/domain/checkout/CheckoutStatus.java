@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.domain.checkout;
+package io.github.vishalmysore.ucp.domain.checkout;
 
 public enum CheckoutStatus {
     incomplete,

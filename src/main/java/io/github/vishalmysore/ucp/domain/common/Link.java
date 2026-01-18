@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.domain.common;
+package io.github.vishalmysore.ucp.domain.common;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

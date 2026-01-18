@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.config;
+package io.github.vishalmysore.ucp.config;
 
 import io.github.vishalmysore.ucp.annotation.*;
 import io.github.vishalmysore.ucp.handler.PaymentHandlerRegistry;

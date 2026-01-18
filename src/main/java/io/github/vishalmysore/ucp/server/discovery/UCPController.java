@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.server.discovery;
+package io.github.vishalmysore.ucp.server.discovery;
 
 import io.github.vishalmysore.a2a.domain.AgentCard;
 import io.github.vishalmysore.a2a.server.RealTimeAgentCardController;

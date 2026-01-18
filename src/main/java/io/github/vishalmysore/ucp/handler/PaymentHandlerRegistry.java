@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.handler;
+package io.github.vishalmysore.ucp.handler;
 
 import io.github.vishalmysore.ucp.annotation.UCPHandler;
 import org.springframework.context.ApplicationContext;

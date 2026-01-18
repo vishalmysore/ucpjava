@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.annotation;
+package io.github.vishalmysore.ucp.annotation;
 
 import java.lang.annotation.*;
 

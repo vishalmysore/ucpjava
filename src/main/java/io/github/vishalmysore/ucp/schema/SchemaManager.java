@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.schema;
+package io.github.vishalmysore.ucp.schema;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

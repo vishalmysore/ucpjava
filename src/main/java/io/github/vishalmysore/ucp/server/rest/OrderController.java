@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.server.rest;
+package io.github.vishalmysore.ucp.server.rest;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

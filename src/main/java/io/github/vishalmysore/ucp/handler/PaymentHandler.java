@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.handler;
+package io.github.vishalmysore.ucp.handler;
 
 /**
  * Interface for UCP payment handlers.

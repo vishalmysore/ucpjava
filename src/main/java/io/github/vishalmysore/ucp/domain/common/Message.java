@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.domain.common;
+package io.github.vishalmysore.ucp.domain.common;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

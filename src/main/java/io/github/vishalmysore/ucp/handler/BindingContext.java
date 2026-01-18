@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.handler;
+package io.github.vishalmysore.ucp.handler;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

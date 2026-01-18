@@ -1,4 +1,4 @@
-﻿ckage io.github.vishalmysore.ucp.config;
+package io.github.vishalmysore.ucp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
