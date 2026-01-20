@@ -106,6 +106,7 @@ public class UCPController {
         Set<Class<?>> distinctBusinesses = new HashSet<>();
         Set<Class<?>> ucpAwareImplementations = new HashSet<>();
         List<String> capabilityLogEntries = new ArrayList<>();
+        boolean ucpStandardRegistered = false;
 
         for (AIAction action : predictions.values()) {
             if (action instanceof GenericJavaMethodAction) {
@@ -120,8 +121,9 @@ public class UCPController {
                 }
 
                 // 2. Check for UCPAware implementation
-                if (io.github.vishalmysore.ucp.domain.discovery.UCPAware.class.isAssignableFrom(clazz)) {
+                if ((!ucpStandardRegistered) && (io.github.vishalmysore.ucp.domain.discovery.UCPAware.class.isAssignableFrom(clazz))) {
                     ucpAwareImplementations.add(clazz);
+                    ucpStandardRegistered= true;
                 }
 
                 // 3. Scan Methods for UCP Capabilities
