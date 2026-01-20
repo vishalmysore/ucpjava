@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * Container annotation for multiple @UCPCapability declarations
  */
-@Target(ElementType.TYPE)
+@Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface UCPCapabilities {

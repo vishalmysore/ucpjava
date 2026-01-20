@@ -6,7 +6,7 @@
 
     <groupId>io.github.vishalmysore</groupId>
     <artifactId>ucpjava</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <name>Tools For Artificial Intelligence</name>
     <description>
         UCPJava is java implementation of ucp protocol. UCP is a new open standard / protocol for AI-driven shopping and commerce, announced by Google in January 2026. It’s designed to let AI agents (e.g., Google Gemini, Search-AI Mode, other assistants) interact with retailers, payment systems, identity systems, and backend commerce systems in a unified way — without requiring separate custom integrations for every agent, merchant, and platform.
@@ -68,11 +68,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Security -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+
 
         <!-- JSON Schema validation -->
         <dependency>

@@ -11,7 +11,6 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-@Import(io.github.vishalmysore.ucp.config.UCPAutoConfiguration.class)
 public @interface EnableUCP {
     /**
      * Enable REST transport binding (default: true)

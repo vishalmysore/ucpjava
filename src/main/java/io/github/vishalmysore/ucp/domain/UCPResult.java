@@ -1,4 +1,10 @@
 package io.github.vishalmysore.ucp.domain;
 
-public interface UCPResult {
+import io.github.vishalmysore.common.CommonClientResponse;
+import io.github.vishalmysore.mcp.domain.CallToolResult;
+
+import java.util.Map;
+
+public interface UCPResult extends CommonClientResponse {
+    Map<String,String> getResult();
 }
