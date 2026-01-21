@@ -112,7 +112,8 @@ public class UCPController {
             if (action instanceof GenericJavaMethodAction) {
                 Method method = ((GenericJavaMethodAction) action).getActionMethod();
                 Class<?> clazz = method.getDeclaringClass();
-
+                String jsonStrForParameters = action.getActionParameters();
+                log.info(jsonStrForParameters)
                 // 1. Detect the Business (Header Identity)
                 if (clazz.isAnnotationPresent(UCPBusiness.class)) {
                     UCPBusiness business = clazz.getAnnotation(UCPBusiness.class);
