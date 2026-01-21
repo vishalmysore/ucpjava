@@ -375,7 +375,7 @@ import io.github.vishalmysore.a2ui.A2UIAware;
   - The sellCar method will be available through MCP at /ucp/mcp and A2A protocols
 
 - For UCP Standard Capabilities:
-  - Use ShoppingService with UCPAware interface
+  - Use ShoppingService with UCPAware interface 
   - Must be @RestController
   - Supports both REST and MCP transports
 
