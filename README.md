@@ -110,8 +110,8 @@ Below is the example of how to use the UCP protocol.
       },
       "id": 17
       }
-      ```
-      ```bash
+```
+```bash
       response is like this
       {
       "jsonrpc": "2.0",
