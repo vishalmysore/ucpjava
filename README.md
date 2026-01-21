@@ -89,48 +89,48 @@ Implements UCP specification version: **2026-01-11**
 - [API Documentation](http://localhost:8080/swagger-ui.html) (when running)
 
 ## Usage
+Below is the example of how to use the UCP protocol.
+ using curl command
 
-  /**
-     * 
-     * Request is like this
-     * 
-     * {
-     * "jsonrpc": "2.0",
-     * "method": "whatThisPersonFavFood",
-     * "params": {
-     * "_meta": {
-     * "ucp": {
-     * "profile": "https://platform.example/profiles/v2026-01/shopping-agent.json"
-     * }
-     * },
-     * "provideAllValuesInPlainEnglish": "vishal is coming home what should i cook"
-     * },
-     * "id": 17
-     * }
-     * 
-     * response is like this
-     * {
-     * "jsonrpc": "2.0",
-     * "id": 17,
-     * "result": {
-     * "ucp": {
-     * "version": "2026-01-11",
-     * "capabilities": [
-     * {
-     * "name": "io.github.vishalmysore.car_booking",
-     * "version": "2026-01-19"
-     * }
-     * ]
-     * },
-     * "booking_id": "bk_1234567890",
-     * "status": "confirmed",
-     * "car_model": "Toyota Camry",
-     * "booking_date": "2026-01-25"
-     * }
-     * }
-     * 
-     * @param request
-     * @param httpRequest
-     * @return
-     * @throws AIProcessingException
-     */
+  
+      
+      Request is like this
+
+```bash
+      {
+      "jsonrpc": "2.0",
+      "method": "whatThisPersonFavFood",
+      "params": {
+      "_meta": {
+      "ucp": {
+      "profile": "https://platform.example/profiles/v2026-01/shopping-agent.json"
+      }
+      },
+      "provideAllValuesInPlainEnglish": "vishal is coming home what should i cook"
+      },
+      "id": 17
+      }
+      ```
+      ```bash
+      response is like this
+      {
+      "jsonrpc": "2.0",
+      "id": 17,
+      "result": {
+      "ucp": {
+      "version": "2026-01-11",
+      "capabilities": [
+      {
+      "name": "io.github.vishalmysore.car_booking",
+      "version": "2026-01-19"
+      }
+      ]
+      },
+      "booking_id": "bk_1234567890",
+      "status": "confirmed",
+      "car_model": "Toyota Camry",
+      "booking_date": "2026-01-25"
+      }
+      }
+      
+   ```  
