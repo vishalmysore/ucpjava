@@ -903,13 +903,10 @@ Implements UCP specification version: **2026-01-11**
 - [tools4ai Framework](https://github.com/vishalmysore/Tools4AI)
 - [a2ajava Library](https://github.com/vishalmysore/a2ajava)
 
-## Usage
-Below is the example of how to use the UCP protocol.
- using curl command
-
-  
-      
-      Request is like this
+## Appendix 
+### usage with curl commands from bash
+Below is the example of how to use the UCP protocol.using curl command
+Request is like this
 
 ```bash
       {
@@ -926,8 +923,11 @@ Below is the example of how to use the UCP protocol.
       "id": 17
       }
 ```
+
+response is like this
+
 ```bash
-      response is like this
+
       {
       "jsonrpc": "2.0",
       "id": 17,
