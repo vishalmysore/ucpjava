@@ -18,18 +18,46 @@ class SchemaManagerTest {
 
     @Test
     void testComposeSchema_WithValidBase() throws Exception {
-        // Since loadSchema is private, we can't easily test without reflection
-        // For now, test that the method doesn't throw and returns null for invalid URIs
-        JsonNode result = schemaManager.composeSchema("invalid://uri", List.of());
-        assertNull(result);
+        JsonNode baseSchema = objectMapper.readTree("{\"type\": \"object\"}");
+        schemaManager.cacheSchema("base://uri", baseSchema);
+
+        JsonNode result = schemaManager.composeSchema("base://uri", List.of());
+
+        assertNotNull(result);
+        assertTrue(result.has("allOf"));
+        assertEquals(1, result.get("allOf").size());
+        assertEquals("object", result.get("allOf").get(0).get("type").asText());
     }
 
     @Test
     void testComposeSchema_WithExtensions() throws Exception {
-        JsonNode result = schemaManager.composeSchema("invalid://uri", List.of("invalid://ext"));
-        assertNull(result);
+        JsonNode baseSchema = objectMapper.readTree("{\"type\": \"object\"}");
+        JsonNode extSchema = objectMapper.readTree("{\"properties\": {\"ext\": {\"type\": \"string\"}}}");
+
+        schemaManager.cacheSchema("base://uri", baseSchema);
+        schemaManager.cacheSchema("ext://uri", extSchema);
+
+        JsonNode result = schemaManager.composeSchema("base://uri", List.of("ext://uri"));
+
+        assertNotNull(result);
+        assertEquals(2, result.get("allOf").size());
     }
 
-    // Note: Full testing would require mocking or providing actual schema URIs
-    // For production, consider making loadSchema protected or injectable
+    @Test
+    void testValidate() {
+        SchemaManager.ValidationResult result = schemaManager.validate(new Object(), null);
+        assertTrue(result.isValid());
+        assertNull(result.getErrorMessage());
+    }
+
+    @Test
+    void testCacheSchema() throws Exception {
+        JsonNode schema = objectMapper.readTree("{\"type\": \"string\"}");
+        schemaManager.cacheSchema("test://uri", schema);
+
+        // Indirectly verify by using composeSchema
+        JsonNode result = schemaManager.composeSchema("test://uri", List.of());
+        assertNotNull(result);
+        assertEquals("string", result.get("allOf").get(0).get("type").asText());
+    }
 }
